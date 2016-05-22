@@ -170,6 +170,21 @@ tests/fast:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+# Convenience name for target.
+source/CMakeFiles/aufgabe7.dir/rule:
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe7.dir/rule
+.PHONY : source/CMakeFiles/aufgabe7.dir/rule
+
+# Convenience name for target.
+aufgabe7: source/CMakeFiles/aufgabe7.dir/rule
+
+.PHONY : aufgabe7
+
+# fast build rule for target.
+aufgabe7/fast:
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/build
+.PHONY : aufgabe7/fast
+
 aufgabe2bis4.o: aufgabe2bis4.cpp.o
 
 .PHONY : aufgabe2bis4.o
@@ -224,6 +239,33 @@ aufgabe5.cpp.s:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.s
 .PHONY : aufgabe5.cpp.s
 
+aufgabe7.o: aufgabe7.cpp.o
+
+.PHONY : aufgabe7.o
+
+# target to build an object file
+aufgabe7.cpp.o:
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.o
+.PHONY : aufgabe7.cpp.o
+
+aufgabe7.i: aufgabe7.cpp.i
+
+.PHONY : aufgabe7.i
+
+# target to preprocess a source file
+aufgabe7.cpp.i:
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.i
+.PHONY : aufgabe7.cpp.i
+
+aufgabe7.s: aufgabe7.cpp.s
+
+.PHONY : aufgabe7.s
+
+# target to generate assembly for a file
+aufgabe7.cpp.s:
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.s
+.PHONY : aufgabe7.cpp.s
+
 circle.o: circle.cpp.o
 
 .PHONY : circle.o
@@ -234,6 +276,7 @@ circle.cpp.o:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.o
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/circle.cpp.o
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.o
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.o
 .PHONY : circle.cpp.o
 
 circle.i: circle.cpp.i
@@ -246,6 +289,7 @@ circle.cpp.i:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.i
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/circle.cpp.i
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.i
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.i
 .PHONY : circle.cpp.i
 
 circle.s: circle.cpp.s
@@ -258,6 +302,7 @@ circle.cpp.s:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.s
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/circle.cpp.s
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.s
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.s
 .PHONY : circle.cpp.s
 
 example.o: example.cpp.o
@@ -324,6 +369,7 @@ vec2.cpp.o:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.o
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/vec2.cpp.o
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.o
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.o
 .PHONY : vec2.cpp.o
 
 vec2.i: vec2.cpp.i
@@ -336,6 +382,7 @@ vec2.cpp.i:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.i
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/vec2.cpp.i
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.i
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.i
 .PHONY : vec2.cpp.i
 
 vec2.s: vec2.cpp.s
@@ -348,6 +395,7 @@ vec2.cpp.s:
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.s
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/vec2.cpp.s
 	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.s
+	cd "/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build" && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.s
 .PHONY : vec2.cpp.s
 
 # Help Target
@@ -362,12 +410,16 @@ help:
 	@echo "... example"
 	@echo "... aufgabe5"
 	@echo "... tests"
+	@echo "... aufgabe7"
 	@echo "... aufgabe2bis4.o"
 	@echo "... aufgabe2bis4.i"
 	@echo "... aufgabe2bis4.s"
 	@echo "... aufgabe5.o"
 	@echo "... aufgabe5.i"
 	@echo "... aufgabe5.s"
+	@echo "... aufgabe7.o"
+	@echo "... aufgabe7.i"
+	@echo "... aufgabe7.s"
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"

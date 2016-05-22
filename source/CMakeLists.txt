@@ -29,3 +29,11 @@ add_executable(aufgabe5
   circle.cpp)
 target_link_libraries(example
   m)
+
+# Build aufgabe7
+add_executable(aufgabe7
+  aufgabe7
+  vec2.cpp
+  circle.cpp)
+target_link_libraries(example
+  m)

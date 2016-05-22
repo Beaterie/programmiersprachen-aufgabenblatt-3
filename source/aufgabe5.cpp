@@ -4,11 +4,11 @@
 #include <algorithm>
 #include <vector>
 
-bool is_odd(const int i){
+bool is_odd(int i){
 	return (i % 2) != 0;
 }
 
-bool is_even(const int i){
+bool is_even(int i){
   return (i % 2) == 0;  
 }
 
