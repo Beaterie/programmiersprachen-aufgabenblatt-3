@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/aufgabe2bis4.cpp
+cstdlib
+-
+vector
+-
+list
+-
+iostream
+-
+iterator
+-
+algorithm
+-
+set
+-
+map
+-
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/circle.cpp
+circle.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/circle.hpp
+iostream
+-
+vec2.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+math.h
+-
+color.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/color.hpp
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/circle.hpp
+vec2.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+math.h
+-
+color.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/color.hpp
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/color.hpp
+iostream
+-
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/vec2.cpp
+vec2.hpp
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+iostream
+-
+math.h
+-
+
+/Users/Josef/Documents/SS 16/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/vec2.hpp
+math.h
+-
+
