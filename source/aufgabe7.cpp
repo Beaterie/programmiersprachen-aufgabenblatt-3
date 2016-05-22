@@ -74,6 +74,59 @@ TEST_CASE("swap", "[aufgabe8]"){
 	REQUIRE(v1[0]==6);
 	REQUIRE(v1[1]==5);
 	REQUIRE(v1[2]==4);
+
+	std::vector<Circle> v2(3);
+	for (int i = 0; i <= 2; ++i) {
+		v2[i].set_radius(4+i);
+	}
+	REQUIRE(v2[0].get_radius()==4);
+	REQUIRE(v2[1].get_radius()==5);
+	REQUIRE(v2[2].get_radius()==6);
+	
+	both_swap(v2[0], v2[2]);
+	
+	REQUIRE(v2[0].get_radius()==6);
+	REQUIRE(v2[1].get_radius()==5);
+	REQUIRE(v2[2].get_radius()==4);
+}
+
+TEST_CASE("sort", "[aufgabe9]"){
+	std::vector<Circle> v3(3);
+	for (int i = 0; i <= 2; ++i) {
+		v3[i].set_radius(4+i);
+	}
+	REQUIRE(v3[0].get_radius()==4);
+	REQUIRE(v3[1].get_radius()==5);
+	REQUIRE(v3[2].get_radius()==6);
+
+	std::sort(std::begin(v3), std::end(v3),
+        // Lambda expression begins
+    [] (Circle const& c1, Circle const& c2) {
+      return (c1.get_radius() < c2.get_radius());
+      } // end of lambda expression
+    );
+
+    REQUIRE(v3[0].get_radius()==4);
+	REQUIRE(v3[1].get_radius()==5);
+	REQUIRE(v3[2].get_radius()==6);
+	REQUIRE(std::is_sorted(v3.begin(), v3.end()) == true);
+}
+
+TEST_CASE(){
+	std::vector<int> v1{1,2,3,4,5,6,7,8,9};
+	std::vector<int> v2{9,8,7,6,5,4,3,2,1};
+	std::vector<int> v3(9);
+
+	std::transform(std::begin(v1), std::end(v1), std::begin(v2), std::begin(v3),
+		[] (int a, int b){
+			return a+b;
+		}
+	);
+	REQUIRE(std::all_of(std::begin(v3), std::end(v3),
+		[] (int a){
+			return a == 10;
+		}
+	) == true);
 }
 
 int main(int argc, char* argv[]){
