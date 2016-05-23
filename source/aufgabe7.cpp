@@ -49,6 +49,17 @@ template <typename T>
     	obj2 = temp; // obj2 uebernimmt Wert von temp (obj1)
 	}
 
+template <typename C, typename P>
+	C filter(C const& container, P const& praedikat){
+		C result;
+  		for (auto &i : container) {
+  			if (praedikat(i)) {
+  				result.push_back(i);
+  			}
+  		}
+    return result;
+	}
+
 TEST_CASE("describe_factorial", "[aufgabe3]"){
 	// ihre Loesung :
 	std::vector<Circle> v(20);
@@ -112,7 +123,7 @@ TEST_CASE("sort", "[aufgabe9]"){
 	REQUIRE(std::is_sorted(v3.begin(), v3.end()) == true);
 }
 
-TEST_CASE(){
+TEST_CASE("lambda", "[aufgabe10]"){
 	std::vector<int> v1{1,2,3,4,5,6,7,8,9};
 	std::vector<int> v2{9,8,7,6,5,4,3,2,1};
 	std::vector<int> v3(9);
@@ -127,6 +138,37 @@ TEST_CASE(){
 			return a == 10;
 		}
 	) == true);
+}
+
+TEST_CASE("filter","[aufgabe11]"){
+	std::vector<int> v{1,2,3,4,5,6};
+	std::vector<int> alleven = filter(v, is_even);
+	REQUIRE(alleven[0]==2);
+	REQUIRE(alleven[1]==4);
+	REQUIRE(alleven[2]==6);
+}
+
+TEST_CASE("[aufgabe12]"){
+	std::vector<Circle> v1(4); //3, 4, 5, 6
+	for (int i = 0; i <= 3; ++i) {
+		v1[i].set_radius(3+i);
+	}
+	std::vector<Circle> v2(2);
+	std::copy_if(v1.begin(), v1.end(), v2.begin(),
+		[] (Circle const& c){
+			return c.get_radius() > 4.0f;
+		}
+	);
+	REQUIRE(v2[0].get_radius() == 5);
+	REQUIRE(v2[1].get_radius() == 6);
+	std::cout << v2[0].get_radius() << " " << v2[1].get_radius() << std::endl;
+	REQUIRE(
+		std::all_of(v2.begin(), v2.end(),
+			[] (Circle const& c){
+				return c.get_radius() > 3;
+			}
+		)
+	== true);
 }
 
 int main(int argc, char* argv[]){
